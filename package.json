@@ -1,0 +1,22 @@
+{
+    "name": "ipfsearch-index-wikipedia",
+    "version": "1.0.0",
+    "description": "Generation of index for ipfsearch from the Wikipedia dumps.",
+    "main": "main.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hoschiCZ/ipfsearch-index-wikipedia"
+    },
+    "license": "ISC",
+    "author": "Ondrej Sojka <ondrej.sojka+npm@gmail.com>",
+    "dependencies": {
+        "ipfsearch-index": "^2.4.0",
+        "typescript": "^2.7.2",
+        "xml-stream": "^0.4.5",
+        "zlib": "^1.0.5"
+    },
+    "devDependencies": {
+        "@types/node": "^9.4.6"
+    },
+    "types": "./main.d.ts"
+}
