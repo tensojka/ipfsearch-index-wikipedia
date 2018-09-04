@@ -10,13 +10,16 @@
     "license": "ISC",
     "author": "Ondrej Sojka <ondrej.sojka+npm@gmail.com>",
     "dependencies": {
-        "ipfsearch-index": "^2.5.0",
-        "typescript": "^3.0.1",
-        "xml-stream": "^0.4.5",
-        "zlib": "^1.0.5"
+        "graceful-fs": "^4.1.11",
+        "ipfsearch-index": "^2.5.1",
+        "typescript": "^3.0.3",
+        "xml-stream": "^0.4.5"
     },
     "devDependencies": {
-        "@types/node": "^9.6.24"
+        "@types/node": "^9.6.31"
     },
-    "types": "./main.d.ts"
+    "types": "./main.d.ts",
+    "engines": {
+        "node": ">=10.9"
+    }
 }

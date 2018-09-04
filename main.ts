@@ -1,16 +1,12 @@
 import {Indexer, Document} from "ipfsearch-index"
 const xmlstream = require("xml-stream")
 const zlib = require("zlib")
-const fs = require("fs")
+const fs = require("graceful-fs")
 
 let indexer = new Indexer()
 
-let inp
-if(process.argv[0]){
-    inp = fs.createReadStream(process.argv[0])
-}else{
-    inp = fs.createReadStream('assets/enwiki-latest-abstract.xml.gz')
-}
+let inp = fs.createReadStream('assets/enwiki-latest-abstract.xml.gz')
+
 let unzip = zlib.createGunzip()
 let unzippedstream = inp.pipe(unzip)
 let xml = new xmlstream(unzippedstream)
